@@ -1,0 +1,17 @@
+Exceptions can occur due to various reasons, such as:
+
+Runtime Errors: These are unexpected errors that occur during the execution of a program, such as division by zero, array index out of bounds, or null pointer dereference.
+
+Input/Output Errors: These occur when there are issues with input/output operations, such as reading from a file that doesn't exist or writing to a read-only file.
+
+Logic Errors: These are errors that occur when the program violates certain logical conditions, leading to incorrect behavior or incorrect results.
+
+In Java, exceptions are represented by classes and are part of the Java Exception Handling mechanism. The exception handling mechanism provides a way to catch and handle exceptions, allowing programs to gracefully handle errors and recover from exceptional situations.
+
+Java has a hierarchy of exception classes, with the root class being java.lang.Throwable. It has two main subclasses:
+
+Checked Exceptions: These are exceptions that the compiler requires to be caught or declared in the method signature using the throws keyword. Examples include IOException, SQLException, and ClassNotFoundException.
+
+Unchecked Exceptions (Runtime Exceptions): These exceptions do not require explicit handling and can be caught or propagated optionally. They are subclasses of RuntimeException. Examples include NullPointerException, ArithmeticException, and ArrayIndexOutOfBoundsException.
+
+To handle exceptions in Java, the try-catch block is used. The try block contains the code that might throw an exception, and the catch block is used to handle the specific type of exception that occurs. Additionally, there is an optional finally block that can be used to specify code that should be executed regardless of whether an exception occurs or not.

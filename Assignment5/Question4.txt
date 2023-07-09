@@ -1,0 +1,14 @@
+throw:
+
+The throw keyword is used to explicitly throw an exception within a program.
+It is followed by an exception object or an expression that evaluates to an exception object.
+The throw statement is typically used when a program encounters an error or an exceptional condition that needs to be explicitly signaled.
+It can be used in methods, constructors, or any block of code to indicate that an exceptional condition has occurred.
+The throw statement causes the program flow to stop and the control to be transferred to the nearest matching catch block to handle the thrown exception.
+throws:
+
+The throws keyword is used in the method declaration to specify that a particular method may throw one or more types of exceptions.
+It is followed by a comma-separated list of exception types.
+When a method is declared with the throws keyword, it indicates that the method might throw exceptions that need to be handled by the caller or propagated further.
+It allows the caller of the method to be aware of the potential exceptions that may be thrown and provides an opportunity to handle those exceptions appropriately.
+If a method declares checked exceptions with throws, the caller must either catch those exceptions using try-catch blocks or declare them to be thrown as well.

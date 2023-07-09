@@ -1,0 +1,9 @@
+Throwing Exceptions: When an exceptional condition occurs, such as an error or an unexpected situation, the program can create an exception object using the throw statement. This exception object encapsulates information about the error.
+
+Catching Exceptions: To handle exceptions, the program uses a try-catch block. The try block contains the code that may throw an exception. If an exception occurs, it is caught by a corresponding catch block that handles the exception. Multiple catch blocks can be used to handle different types of exceptions.
+
+Exception Types: Exceptions in Java are represented by classes that are part of the Java Exception class hierarchy. The exception classes are organized in a hierarchical manner, with the root class being java.lang.Throwable. There are two main categories of exceptions: checked exceptions and unchecked exceptions (runtime exceptions).
+
+Handling Exceptions: In the catch block, the program specifies the actions to be taken when a specific exception is encountered. This can include displaying an error message, logging the exception, performing cleanup operations, or taking alternative execution paths.
+
+Finally Block: The finally block is an optional block that follows the try-catch block. It contains code that is always executed, regardless of whether an exception occurs or not. It is typically used for cleanup operations, such as releasing resources, closing files, or closing database connections.

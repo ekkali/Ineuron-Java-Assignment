@@ -1,0 +1,5 @@
+ry block: The code that might throw an exception is enclosed within the try block. If an exception occurs within the try block, it is immediately caught and the corresponding catch block is executed.
+
+Catch block: The catch block follows the try block and contains the code that handles the exception. It specifies the type of exception it can handle, allowing you to have multiple catch blocks to handle different types of exceptions.
+
+Finally block: The finally block is optional and follows the catch block (or the try block if there is no catch block for a specific exception). It contains code that will be executed regardless of whether an exception occurred or not. The finally block is often used to release resources like database connections or file handles.

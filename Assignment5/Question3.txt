@@ -1,0 +1,18 @@
+Checked Exceptions:
+
+Checked exceptions are exceptions that the compiler requires to be caught or declared in the method signature using the throws keyword.
+Examples of checked exceptions in Java include IOException, SQLException, and ClassNotFoundException.
+Checked exceptions typically represent expected and recoverable error conditions that can occur during the execution of a program.
+Code that may throw checked exceptions must be placed within a try block, and the corresponding exceptions should be caught in one or more catch blocks or declared to be thrown by the method.
+Unchecked Exceptions (Runtime Exceptions):
+
+Unchecked exceptions, also known as runtime exceptions, do not require explicit handling and can be caught or propagated optionally.
+Examples of runtime exceptions in Java include NullPointerException, ArithmeticException, and ArrayIndexOutOfBoundsException.
+Unchecked exceptions typically represent programming errors, logic errors, or exceptional conditions that could have been prevented with proper coding practices.
+While it is not mandatory to catch or declare unchecked exceptions, it is considered good practice to handle them appropriately for better program stability and reliability.
+Errors:
+
+Errors are exceptional conditions that occur at a more severe level than exceptions. They generally indicate problems that are beyond the control of the application.
+Examples of errors in Java include OutOfMemoryError, StackOverflowError, and NoClassDefFoundError.
+Errors typically represent critical problems or system failures that are not recoverable by the application itself.
+Errors should not be caught or handled by application code. They are usually reserved for exceptional situations at the system level, and the application is not expected to recover from them.

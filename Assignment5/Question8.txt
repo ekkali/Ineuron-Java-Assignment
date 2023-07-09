@@ -1,0 +1,13 @@
+A thread is created and controlled by the Java Virtual Machine (JVM). Each Java program has at least one thread, which is called the "main" thread. The main thread is created by the JVM when the program starts and is responsible for executing the main() method.
+
+Threads in Java provide the following benefits:
+
+Multitasking: Threads allow multiple tasks to run concurrently, making it possible to perform multiple operations simultaneously.
+Responsiveness: By using threads, you can ensure that your program remains responsive to user interactions even while performing time-consuming tasks in the background.
+Efficiency: Threads can make better use of available system resources by utilizing idle time and maximizing CPU utilization.
+Asynchronous operations: Threads enable asynchronous programming, allowing tasks to run independently and not block the main execution flow.
+To work with threads in Java, you have two approaches:
+
+Extending the Thread class: You can create a new class that extends the Thread class and override its run() method. The run() method contains the code that will be executed when the thread starts. You can then create an instance of your custom thread class and call its start() method to begin the execution.
+
+Implementing the Runnable interface: The Runnable interface defines a single method run() that represents the task to be executed by the thread. You can implement this interface in a class and provide the implementation for the run() method. Then, you can create an instance of the class and pass it as an argument to a Thread object. Finally, you can call the start() method on the Thread object to start the execution.
