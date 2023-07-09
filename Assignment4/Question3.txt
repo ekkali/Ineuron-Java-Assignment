@@ -1,0 +1,22 @@
+@FunctionalInterface
+interface Calculator {
+    int calculate(int a, int b);
+}
+
+public class FunctionalInterfaceExample {
+    public static void main(String[] args) {
+        // Using lambda expression
+        Calculator addition = (a, b) -> a + b;
+        int result1 = addition.calculate(5, 3);
+        System.out.println("Addition Result: " + result1);
+
+        // Using method reference
+        Calculator subtraction = FunctionalInterfaceExample::subtract;
+        int result2 = subtraction.calculate(8, 4);
+        System.out.println("Subtraction Result: " + result2);
+    }
+
+    public static int subtract(int a, int b) {
+        return a - b;
+    }
+}

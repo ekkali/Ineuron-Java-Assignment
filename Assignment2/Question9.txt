@@ -1,0 +1,31 @@
+public class LetterCheck {
+    public static void main(String[] args) {
+        String word = "Umbrella";
+        boolean isPresent = checkLetter(word, 'e');
+        System.out.println("Is the letter 'e' present in the word? " + isPresent);
+    }
+
+    public static boolean checkLetter(String word, char letter) {
+        for (int i = 0; i < word.length(); i++) {
+            if (word.charAt(i) == letter) {
+                return true;
+            }
+        }
+        return false;
+    }
+}
+
+
+In this program, the checkLetter() method takes a word and a character as parameters and performs the following steps:
+
+It iterates through each character in the word using a for loop.
+
+Inside the loop, it checks if the current character is equal to the specified letter using the charAt() method.
+
+If a match is found, it returns true to indicate that the letter is present in the word.
+
+If no match is found after iterating through all the characters, it returns false to indicate that the letter is not present in the word.
+
+The main() method calls the checkLetter() method with the word "Umbrella" and the letter 'e' and prints the result.
+
+When you run the program, the ou

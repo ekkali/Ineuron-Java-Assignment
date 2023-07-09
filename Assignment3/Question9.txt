@@ -1,0 +1,26 @@
+bstraction is a fundamental concept in Java and object-oriented programming (OOP) that allows you to create abstract classes and interfaces to provide a simplified view of complex systems. It involves separating the essential characteristics and behaviors of an object from the specific implementation details. Let's explore abstraction with an example:
+
+Imagine you are developing a system for a zoo, and you want to represent different types of animals. One way to achieve abstraction is by creating an abstract class called Animal that defines common attributes and behaviors shared by all animals:
+
+java
+
+
+abstract class Animal {
+    private String name;
+    private int age;
+
+    public Animal(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    public abstract void makeSound();
+
+    public String getName() {
+        return name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+}

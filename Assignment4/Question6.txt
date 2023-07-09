@@ -1,0 +1,13 @@
+ambda expressions were introduced in Java 8 as a new feature to simplify the process of writing functional interfaces. A lambda expression is a concise way to represent a method as an expression. It provides a more compact and readable syntax for writing code that relies heavily on functional programming.
+
+(parameters) -> expression or statement block
+
+
+Calculator addition = (a, b) -> a + b;
+
+
+// Single-parameter lambda expression
+Runnable runnable = () -> System.out.println("Hello, Lambda!");
+
+// No-parameter lambda expression
+Supplier<Double> randomNumber = () -> Math.random();

@@ -1,0 +1,13 @@
+Declaration: An interface is declared using the interface keyword, followed by the interface name. For example: interface MyInterface.
+
+Abstract Methods: Interfaces can contain abstract methods, which are declared without an implementation. These methods define the behavior that implementing classes must provide. Any class that implements the interface is responsible for implementing the abstract methods defined in the interface.
+
+Default Methods: Starting from Java 8, interfaces can also have default methods. Default methods are methods with a defined implementation in the interface itself. These methods provide a default behavior that implementing classes can use, but they can also be overridden if needed.
+
+Static Methods: Java 8 introduced the ability to define static methods in interfaces. Static methods in interfaces are associated with the interface itself, not with any implementing class. They can be called directly on the interface without the need for an instance.
+
+Constants: Interfaces can also define constants, which are implicitly public, static, and final. Constants are typically used to define values that are shared among implementing classes.
+
+Multiple Inheritance: One of the notable features of interfaces is that a class can implement multiple interfaces. This allows a class to inherit behavior from multiple sources, promoting flexibility and code reuse.
+
+Implementation: Interfaces do not provide any direct implementation. They only define the required behavior and method signatures. The actual implementation is provided by the classes that implement the interface.

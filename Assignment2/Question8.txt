@@ -1,0 +1,20 @@
+import java.util.Arrays;
+
+public class StringSorter {
+    public static void main(String[] args) {
+        String input = "openai";
+        String sortedString = sortStringAlphabetically(input);
+        System.out.println("Sorted String: " + sortedString);
+    }
+
+    public static String sortStringAlphabetically(String input) {
+        // Convert the input string to an array of characters
+        char[] chars = input.toCharArray();
+
+        // Sort the array of characters
+        Arrays.sort(chars);
+
+        // Convert the sorted array of characters back to a string
+        return new String(chars);
+    }
+}

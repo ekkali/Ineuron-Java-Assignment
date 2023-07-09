@@ -1,0 +1,3 @@
+The booleanExpression is evaluated. If it is true, the value of expression1 is returned. If it is false, the value of expression2 is returned.
+The expression1 and expression2 can be any valid Java expressions, including literals, variables, method calls, or even other conditional expressions.
+The type of the value returned by the conditional operator is determined by the types of expression1 and expression2. The types of expression1 and expression2 must be compatible, meaning they should have the same type or be able to be implicitly converted to a common type.

@@ -1,0 +1,18 @@
+Using the equals() method:
+
+The equals() method compares the contents of two strings to check if they are equal.
+It returns a boolean value: true if the strings are equal, and false otherwise.
+Syntax: string1.equals(string2)
+
+Using the compareTo() method:
+
+The compareTo() method compares two strings lexicographically.
+It returns an integer value that indicates the comparison result:
+If the strings are equal, it returns 0.
+If the first string is lexicographically greater than the second string, it returns a positive value.
+If the first string is lexicographically less than the second string, it returns a negative value.
+Syntax: string1.compareTo(string2)
+
+It's important to note that when comparing strings in Java, the equals() method should be used for content equality checks, while the compareTo() method is suitable for lexicographical comparison.
+
+Additionally, Java provides the equalsIgnoreCase() method, which performs a case-insensitive comparison of strings.

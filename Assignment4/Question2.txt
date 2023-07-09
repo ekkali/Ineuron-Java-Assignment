@@ -1,0 +1,36 @@
+abstract class AbstractClass {
+    // Abstract methods
+    public abstract void abstractMethod1();
+    public abstract void abstractMethod2();
+
+    // Concrete methods
+    public void concreteMethod1() {
+        System.out.println("This is concrete method 1.");
+    }
+
+    public void concreteMethod2() {
+        System.out.println("This is concrete method 2.");
+    }
+}
+
+class ConcreteClass extends AbstractClass {
+    @Override
+    public void abstractMethod1() {
+        System.out.println("This is implementation of abstract method 1.");
+    }
+
+    @Override
+    public void abstractMethod2() {
+        System.out.println("This is implementation of abstract method 2.");
+    }
+}
+
+public class ProgramExample {
+    public static void main(String[] args) {
+        AbstractClass instance = new ConcreteClass();
+        instance.abstractMethod1();
+        instance.abstractMethod2();
+        instance.concreteMethod1();
+        instance.concreteMethod2();
+    }
+}

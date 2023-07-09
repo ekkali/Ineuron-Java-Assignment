@@ -1,0 +1,14 @@
+In Java, the final keyword has different meanings depending on its context. When applied to a class, the final keyword is used to declare a class as final, resulting in a final class.
+
+A final class in Java is a class that cannot be subclassed or extended. It marks the class as a complete and unmodifiable entity. Once a class is declared as final, it cannot be inherited by any other class. This restriction prevents any further modifications or extensions to the final class.
+
+n the above example, the FinalClass is declared as final using the final keyword. This means that it cannot be extended by any other class. Any attempt to inherit from FinalClass will result in a compilation error.
+
+Benefits of Final Classes:
+
+Integrity: Final classes guarantee that their behavior and implementation remain consistent and unmodified, ensuring the integrity of the class.
+Security: By making a class final, you prevent any potential security vulnerabilities that could arise from subclassing or overriding critical parts of the class.
+Performance: The JVM can perform certain optimizations on final classes since it knows that no other class can extend or modify them. This can lead to performance improvements in some cases.
+It's worth noting that while a class can be declared as final, its methods can still be overridden if they are not marked as final. In other words, a final class can have non-final methods, and those methods can be overridden by subclasses.
+
+Overall, marking a class as final is a design decision that ensures the class's integrity, restricts modification, and prevents inheritance, offering benefits in terms of security, performance, and maintaining the intended behavior of the class.

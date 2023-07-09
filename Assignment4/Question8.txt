@@ -1,0 +1,25 @@
+In Java 8, a functional interface is an interface that has exactly one abstract method. It is also known as a Single Abstract Method (SAM) interface or a functional interface because it can be used as the basis for lambda expressions or method references.
+
+Functional interfaces are the foundation of functional programming in Java. They provide a way to represent behavior as data and enable the use of lambda expressions to concisely express that behavior. By designating an interface as a functional interface, you signal that it is intended to be used with lambda expressions or method references.
+
+The @FunctionalInterface annotation was introduced in Java 8 to explicitly mark an interface as a functional interface. While the annotation is not required for an interface to be considered functional, it provides additional clarity and helps prevent accidental addition of extra abstract methods.
+
+@FunctionalInterface
+interface MyFunction {
+    void performAction();
+}
+
+
+In this example, MyFunction is a functional interface because it has exactly one abstract method, performAction(). The @FunctionalInterface annotation is used to indicate that this interface is intended to be used as a functional interface.
+
+Functional interfaces can be used as types for lambda expressions or method references. Here's an example that demonstrates the usage of a functional interface:
+
+public class FunctionalInterfaceExample {
+    public static void main(String[] args) {
+        MyFunction function = () -> System.out.println("Hello, Functional Interface!");
+        function.performAction();
+    }
+}
+
+
+In this example, we create an instance of the MyFunction functional interface using a lambda expression. The lambda expression () -> System.out.println("Hello, Functional Interface!") represents the implementation of the single abstract method performAction().

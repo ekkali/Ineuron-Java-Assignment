@@ -1,0 +1,1 @@
+No, it is not mandatory for a lambda expression to have parameters. A lambda expression can have zero or more parameters, depending on the specific requirement of the functional interface it is implementing.

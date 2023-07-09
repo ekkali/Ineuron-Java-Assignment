@@ -1,0 +1,16 @@
+if (condition) {
+    // Code to execute if the condition is true
+} else {
+    // Code to execute if the condition is false
+}
+
+
+if: The keyword if marks the beginning of the conditional statement.
+
+condition: The condition is a boolean expression that determines whether the code inside the if block or the else block should be executed. The condition should evaluate to either true or false.
+
+if block: The block of code within the curly braces {} following the if statement is executed if the condition is true.
+
+else: The keyword else is followed by a block of code within curly braces {}. This block of code is executed if the condition is false.
+
+The else block is optional. If the condition in the if statement is true, only the code within the if block is executed. If the condition is false, the code within the else block is executed instead.

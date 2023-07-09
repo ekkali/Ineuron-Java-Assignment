@@ -1,0 +1,26 @@
+In Java, strings are immutable, which means their values cannot be changed once they are created. However, there is a mutable alternative to strings called StringBuilder (or StringBuffer for thread-safe operations). The StringBuilder class allows you to modify the contents of a string-like object without creating new string objects. Here's an example that demonstrates the use of StringBuilder as a mutable string:
+
+StringBuilder mutableString = new StringBuilder("Hello");
+
+mutableString.append(" World!"); // Appending a string
+System.out.println(mutableString); // Output: Hello World!
+
+mutableString.insert(5, ","); // Inserting a character at a specific index
+System.out.println(mutableString); // Output: Hello, World!
+
+mutableString.replace(6, 12, "Java"); // Replacing a substring
+System.out.println(mutableString); // Output: Hello, Java!
+
+mutableString.delete(6, 8); // Deleting a range of characters
+System.out.println(mutableString); // Output: Hello Java!
+
+
+In this example, we create a StringBuilder object called mutableString and initialize it with the value "Hello". We then use various methods available in the StringBuilder class to modify the string-like object:
+
+The append() method is used to concatenate a string to the existing value of mutableString.
+The insert() method is used to insert a character (in this case, a comma) at a specific index in mutableString.
+The replace() method is used to replace a substring (in this case, " World") with a different substring ("Java") in mutableString.
+The delete() method is used to delete a range of characters (in this case, removing the comma and the space) from mutableString.
+Each operation modifies the mutableString object directly, without creating new string objects. This mutable behavior can be useful when you need to perform multiple modifications to a string-like object efficiently.
+
+It's important to note that StringBuilder is not inherently thread-safe, while StringBuffer provides synchronized methods for thread-safe operations. Therefore, if you require thread-safe string modifications, you can use StringBuffer instead of StringBuilder.

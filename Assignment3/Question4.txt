@@ -1,0 +1,16 @@
+public class CompileTimePolymorphismExample {
+    public static void main(String[] args) {
+        printMessage("Hello");
+        printMessage("Welcome", 5);
+    }
+
+    public static void printMessage(String message) {
+        System.out.println("Message: " + message);
+    }
+
+    public static void printMessage(String message, int count) {
+        for (int i = 0; i < count; i++) {
+            System.out.println("Message " + (i + 1) + ": " + message);
+        }
+    }
+}
