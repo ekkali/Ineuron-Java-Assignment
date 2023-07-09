@@ -1,0 +1,23 @@
+Class Loader Subsystem:
+
+Class Loader: Responsible for loading Java class files into the JVM. It locates, loads, and links the classes needed for execution.
+Class Area: Stores the runtime representation of loaded classes, including field and method information.
+Runtime Data Areas:
+
+Heap: The runtime data area where objects are allocated. It is divided into several generations (Young, Old, Perm/Metaspace) and is responsible for memory management, including garbage collection.
+Method Area: Stores class-level data, including method bytecode, constant pool, and static variables. It is shared among all threads and classes.
+Java Stacks: Each thread has its own Java stack, consisting of stack frames. It holds method invocations, local variables, and partial results.
+Execution Engine:
+
+Just-In-Time (JIT) Compiler: Compiles bytecode into native machine code at runtime for efficient execution. It optimizes frequently executed code segments.
+Interpreter: Executes bytecode line-by-line, interpreting and executing instructions sequentially.
+Native Method Interface (JNI):
+
+Provides a way to call native code (written in other programming languages like C or C++) from Java programs. It allows interaction between Java and the underlying operating system.
+Native Method Libraries:
+
+Contains native libraries required for the execution of Java programs. These libraries provide the interface between Java and the underlying system resources, such as I/O operations or network access.
+Execution Control:
+
+Program Counter: Keeps track of the currently executing instruction within a method.
+Thread Scheduler: Manages the execution of multiple threads, including thread creation, synchronization, and context switching.

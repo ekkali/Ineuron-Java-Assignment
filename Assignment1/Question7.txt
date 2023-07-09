@@ -1,0 +1,9 @@
+Local Variables: These variables are declared and used within a specific block of code, such as a method, constructor, or a block within a method. Local variables have a limited scope and are only accessible within the block where they are declared. They must be explicitly initialized before use. Examples of local variables include loop counters, temporary storage, or method parameters.
+
+Instance Variables: Also known as member variables or fields, instance variables belong to an instance of a class. Each instance (object) of the class has its own copy of instance variables. They are declared within a class but outside any method, constructor, or block. Instance variables are initialized when an object is created using the new keyword. These variables have default values if not explicitly initialized.
+
+Static Variables: Static variables, also called class variables, are associated with a class rather than with instances (objects) of the class. They are declared using the static keyword and exist independently of any object. All instances of a class share the same static variable. Static variables are initialized when the class is loaded and can be accessed using the class name. They are often used to store shared data or constants.
+
+Parameters: Parameters are variables defined in the method signature and are used to pass values into a method. They allow data to be transferred from the caller to the method being called. Method parameters have a scope limited to the method itself.
+
+Class Constants: Constants are variables whose values do not change once they are assigned. In Java, constants are typically declared using the final keyword and are named using uppercase letters. They are commonly used for values that remain fixed throughout the program, such as mathematical constants or configuration settings.

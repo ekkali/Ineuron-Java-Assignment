@@ -1,0 +1,24 @@
+JIT (Just-In-Time) compiler is a component of the Java Virtual Machine (JVM) that dynamically compiles bytecode into native machine code at runtime. The primary purpose of the JIT compiler is to improve the performance of Java applications by optimizing the execution of bytecode.
+
+Here's how the JIT compiler works:
+
+Bytecode Execution:
+
+When a Java program is run, the JVM initially interprets the bytecode line by line using an interpreter. This interpretation process is relatively slow compared to executing native machine code.
+Profiling and Optimization:
+
+As the bytecode is executed, the JIT compiler analyzes the code's runtime behavior and gathers profiling information, such as frequently executed methods and hotspots (sections of code executed repeatedly).
+Based on this profiling data, the JIT compiler identifies sections of bytecode that could benefit from optimization.
+Just-In-Time Compilation:
+
+Once the JIT compiler identifies a hot section of bytecode, it compiles that portion into native machine code on-the-fly.
+The generated native code is highly optimized for the target hardware and can execute more efficiently than interpreted bytecode.
+Caching and Reuse:
+
+The JIT compiler caches the compiled native code for future use, eliminating the need to recompile the same section of bytecode every time it is encountered.
+The native code can be reused across multiple invocations of the same code, resulting in performance improvements.
+By dynamically compiling bytecode into native machine code, the JIT compiler helps bridge the performance gap between interpreted languages (like Java bytecode) and native languages. It leverages runtime information to optimize frequently executed code segments, resulting in significant performance gains.
+
+It's important to note that the JIT compilation process adds some overhead during program startup as the compiler analyzes and optimizes the code. However, the performance benefits are typically realized once the optimized code is executed.
+
+The JIT compiler is an integral part of modern JVM implementations and plays a crucial role in achieving Java's "write once, run anywhere" principle by adapting the code to the target hardware at runtime.

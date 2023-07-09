@@ -1,0 +1,19 @@
+Naming Rules:
+
+Identifiers must begin with a letter (A-Z or a-z), underscore (_), or dollar sign ($).
+After the first character, identifiers can also include digits (0-9).
+Java is case-sensitive, so uppercase and lowercase letters are considered different.
+Identifiers should not be a reserved word (e.g., keywords like int, class, for, etc.).
+Conventions and Best Practices:
+
+It is recommended to use meaningful and descriptive names for identifiers to enhance code readability.
+By convention, variables and methods should use camelCase, starting with a lowercase letter (e.g., myVariable, calculateTotal()).
+Class and interface names should use PascalCase, starting with an uppercase letter (e.g., MyClass, MyInterface).
+Constants (static final variables) are usually written in uppercase with underscores separating words (e.g., MAX_SIZE, PI_VALUE).
+Examples of Identifiers:
+
+Variable identifier: age, firstName, isFinished
+Method identifier: calculateArea(), printMessage()
+Class identifier: Car, Person, Employee
+Interface identifier: Drawable, Comparable
+Constant identifier: MAX_SIZE, PI_VALUE

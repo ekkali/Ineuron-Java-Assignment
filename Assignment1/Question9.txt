@@ -1,0 +1,21 @@
+Primitive Data Types:
+
+boolean: Represents a boolean value, either true or false.
+byte: Represents an 8-bit integer value, ranging from -128 to 127.
+short: Represents a 16-bit integer value, ranging from -32,768 to 32,767.
+int: Represents a 32-bit integer value, ranging from -2,147,483,648 to 2,147,483,647.
+long: Represents a 64-bit integer value, ranging from -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807.
+float: Represents a 32-bit floating-point value.
+double: Represents a 64-bit floating-point value.
+char: Represents a single character, such as 'a', 'b', or 'c'.
+These primitive data types are used to store simple values and are passed by value.
+
+Reference Data Types:
+
+String: Represents a sequence of characters and is widely used to store text.
+Array: Represents a collection of elements of the same type, stored in contiguous memory locations.
+Class: Represents a reference to a class.
+Interface: Represents a reference to an interface.
+Enum: Represents a special data type that defines a set of constants.
+Object: Represents a reference to any object.
+Reference data types are used to store complex objects and are passed by reference.

@@ -1,0 +1,22 @@
+In Java, there are four access specifiers that define the visibility and accessibility of classes, methods, and variables within a program. These access specifiers determine which other classes can access and interact with the declared entities. The four access specifiers in Java are:
+
+public:
+
+The public access specifier is the most permissive and provides the highest level of accessibility.
+Public entities can be accessed from anywhere in the program, including other packages and classes.
+For example, a public class, method, or variable can be accessed by any other class.
+private:
+
+The private access specifier restricts the accessibility of entities to within the same class.
+Private entities cannot be accessed or referenced from outside the class they are declared in.
+For example, a private method or variable can only be accessed within the class itself.
+protected:
+
+The protected access specifier allows access to entities within the same package and subclasses.
+Protected entities can be accessed by classes within the same package or subclasses, even if they are in different packages.
+For example, a protected method or variable can be accessed by classes in the same package or subclasses in different packages.
+Default (no explicit specifier):
+
+When no access specifier is specified, it is considered the default access specifier.
+Default access allows entities to be accessed within the same package only.
+If no access specifier is explicitly specified, the entity can be accessed by other classes in the same package but not by classes in different packages.
